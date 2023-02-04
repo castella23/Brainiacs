@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form action="/submit" method="post">
+        <h1>Credentials</h1>
+        <label for="username">Username</label>
+        <input type="text" name="Username"><br>
+        <label for="Email">Email</label>
+        <input type="email" name="Email"><br>
+        <label for="Password">Password</label>
+        <input type="password" name="Password"><br>
+        <input type="file" name="Image"><br>
+        <input type="submit" name="Submit" value="Submit">
+
+    </form>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body
+        {
+            display: flex;
+            background: linear-gradient(rgb(147, 15, 130),rgb(245, 245, 0));
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        form
+        {
+            border: 2px solid #000;
+            height: 375px;
+            padding-top: 30px;
+            padding-left: 20px;
+            background: #000;
+            opacity: 0.7;
+            color: #fff;
+            border-radius: 12px;
+        }
+        form input
+        {
+            /* margin: 1px 0; */
+            display: flex;
+            height: 30px;
+            border-radius: 10px;
+            outline: none;
+            text-indent: 10px;
+        }
+        form input[type="submit"]{
+            width: 100px;
+            margin: auto;
+            border-radius: 10px;
+            padding-left: 21px;
+            
+        }
+    </style>
+</body>
+
+</html>
